@@ -1,4 +1,4 @@
-= stree
+2= stree
 
 home  :: FIX (url)
 code  :: FIX (url)
@@ -27,6 +27,9 @@ FIX (describe your package)
 * FIX (sudo gem install, anything else)
 
 == DEVELOPERS:
+
+  $ rake test
+  $ rake compile
 
 After checking out the source, run:
 

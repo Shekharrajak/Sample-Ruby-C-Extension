@@ -30,7 +30,7 @@ require "rake/extensiontask"
 
 HOE = Hoe.spec 'stree' do
   developer('Aaron Patterson', 'aaron@tenderlovemaking.com')
-  self.readme_file   = 'README.rdoc'
+  self.readme_file   = 'README.txt'
   self.history_file  = 'History.txt'
   self.extra_rdoc_files  = FileList['*.rdoc']
   self.extra_dev_deps << ['rake-compiler', '>= 0']

@@ -28,7 +28,7 @@ require 'rubygems'
 require 'hoe'
 require "rake/extensiontask"
 
-Hoe.spec 'stree' do
+HOE = Hoe.spec 'stree' do
   developer('Aaron Patterson', 'aaron@tenderlovemaking.com')
   self.readme_file   = 'README.rdoc'
   self.history_file  = 'CHANGELOG.rdoc'
@@ -36,7 +36,7 @@ Hoe.spec 'stree' do
   self.extra_dev_deps << ['rake-compiler', '>= 0']
   self.spec_extras = { :extensions => ["ext/stree/extconf.rb"] }
 
-  Rake::ExtensionTask.new('stree', spec) do |ext|
+  Rake::ExtensionTask.new(HOE.name, HOE.spec) do |ext|
     ext.lib_dir = File.join('lib', 'stree')
   end
 end
